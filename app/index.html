@@ -4,189 +4,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Started</title>
+  <title>Yablonovkiy</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="#" class="header__logo"></a>
-          <div class="header__menu menu">
-            <div class="header__burger">
-              <span class="header__burger-btn"></span>
+      <div class="header__wrap">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="header__logo">
+              <picture class="logo__img">
+                <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
+                <img src="images/logo.png" alt="">
+              </picture>
+            </a>
+            <div class="header__menu menu">
+              <div class="header__burger">
+                <span class="header__burger-btn"></span>
+              </div>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li><a data-goto='.page__section_1' href="#" class="menu__link">Жилые комплексы</a></li>
+                  <li><a data-goto='.page__section_2' href="#" class="menu__link">О компании</a></li>
+                  <li><a data-goto='.page__section_3' href="#" class="menu__link">Как купить</a></li>
+                  <li><a data-goto='.page__section_3' href="#" class="menu__link">Контакты</a></li>
+                  <div class="contact_us">
+                    <div class="contact_us_wrap">
+                      <a class="contact_us-tel" href="">+7 (918) 377-48-10</a>
+                      <a class="contact_us-link" href="#">Заказать звонок</a>
+                    </div>
+                  </div>
+
+                </ul>
+              </nav>
             </div>
-            <nav class="menu__body">
-              <ul class="menu__list">
-                <li><a data-goto='.page__section_1' href="#" class="menu__link">Раздел №1</a></li>
-                <li><a data-goto='.page__section_2' href="#" class="menu__link">Раздел №2</a></li>
-                <li><a data-goto='.page__section_3' href="#" class="menu__link">Раздел №3</a></li>
-                <li>
-                  <a href="#" class="menu__link">Страница №1</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__sub-list">
-                    <li>
-                      <a href="#" class="menu__sub-link">Раздел страница №1</a>
-                    </li>
-                    <li>
-                      <a href="#" class="menu__sub-link">Раздел страница №2</a>
-                    </li>
-                    <li>
-                      <a href="#" class="menu__sub-link">Раздел страница №3</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#" class="menu__link">Страница №2</a>
-                </li>
-              </ul>
-            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav">
+        <div class="container">
+          <ul class="menu__list">
+            <li><a data-goto='.page__section_1' href="#" class="menu__link">Преимущества</a></li>
+            <li><a data-goto='.page__section_2' href="#" class="menu__link">Инфраструктура</a></li>
+            <li><a data-goto='.page__section_3' href="#" class="menu__link">Планировка</a></li>
+            <li><a data-goto='.page__section_3' href="#" class="menu__link">Отделка</a></li>
+            <li><a data-goto='.page__section_3' href="#" class="menu__link">Описание</a></li>
+            <li><a data-goto='.page__section_3' href="#" class="menu__link">Контакты</a></li>
+            <li><a data-goto='.page__section_3' href="#" class="menu__link">Документация</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="intro">
+        <div class="container">
+          <div class="intro-wrap">
+
+
+            <div class="breadcrumbs">
+              <div class="container">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Жилые комплекс</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Яблоновский</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="intro_box">
+              <h1 class="intro-title">Жилой Комплекс <span>«Яблоновский»</span></h1>
+              <p class="intro-subtitle">Краснодар, пгт. Яблоновский ул. Кобцевой</p>
+              <p class="intro-price">от 63 801 до 65 678 ₽/м²</p>
+              <button class="btn">Узнать стоимость проекта</button>
+            </div>
+
+            <div class="vidjet">
+              <a href="#"><img class="vidjet-item1" src="images/3d-icon.svg" alt="3d"></a>
+              <a href="#"><img class="vidjet-item2" src="images/vidjet-icon.svg" alt="vidjet"></a>
+              <a href="#"><img class="vidjet-item3" src="images/vidjet2-icon.svg" alt="vidjet"></a>
+            </div>
+
+
           </div>
         </div>
       </div>
     </header>
 
     <main class="page">
-      <section class="page__section page__section_1">
+      <section class="page__section page__section_1 infrastructure">
         <div class="container">
-          <h1 class="page__title">Отличная статья</h1>
-          <div class="page__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-          </div>
+          <h3 class="title">Наша инфраструктура</h3>
+
         </div>
 
       </section>
-      <section class="page__section page__section_2">
+      <section class="page__section page__section_2 description">
         <div class="container">
-          <h1 class="page__title">Отличная статья</h1>
-          <div class="page__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-          </div>
+          <h3 class="title">Описание Жилого Комплекса</h3>
+          <p class="description-subtitle">Нажимайте
+            <img src="images/Vector1.svg" alt="">
+            <img src="images/Vector2.svg" alt="">
+            чтобы подробно ознакомится с проектом
+          </p>
         </div>
 
       </section>
-      <section class="page__section page__section_3">
+      <section class="page__section page__section_3 document">
         <div class="container">
-          <h1 class="page__title">Отличная статья</h1>
-          <div class="page__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus provident ratione consequatur
-              aperiam labore laborum! Error dignissimos ipsa vitae quod modi explicabo! Alias voluptate cumque ea odio
-              necessitatibus eum?</p>
+          <h3 class="title">Документация жилого <br>комплекса</h3>
+
+          <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="document_wrap">
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Проектная декларация Литер 1 по ул. Кобцевой</p>
+                  </div>
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Разрешение на строительство ЖК</p>
+                  </div>
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Проект договора долевого участия "ЖК Яблоновский"</p>
+                  </div>
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Генеральный договор страхования ООО СО Купеческое</p>
+                  </div>
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Проектная декларация Литер 1 по ул. Кобцевой</p>
+                  </div>
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Разрешение на строительство ЖК</p>
+                  </div>
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Проект договора долевого участия "ЖК Яблоновский"</p>
+                  </div>
+                  <div class="document_item">
+                    <img src="images/doc-icon.svg" alt="">
+                    <p class="document_text">Генеральный договор страхования ООО СО Купеческое</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+            </div>
+
+            <div class="slider-pagination">
+              <div class="swiper-pagination"></div>
+            </div>
+
+
+
           </div>
         </div>
-
       </section>
     </main>
     <footer class="footer"></footer>
   </div>
 
 
-
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

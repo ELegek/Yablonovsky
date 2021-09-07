@@ -86,8 +86,15 @@ if (menuLinks.length > 0) {
     }
 }
 
-$(function () {
+// Swiper
+
+const swiper = new Swiper('.swiper', {
 
 
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        // dynamicBullets: true,
+    }
 
-})
+});

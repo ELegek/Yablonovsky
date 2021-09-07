@@ -4,12 +4,13 @@ body {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 27px;
 	overflow-x: hidden;
 	min-width: 320px;
+	color: #212D55;
 }
 
 body._lock {
@@ -84,4 +85,51 @@ body._touch .menu__list>li._active .menu__arrow {
 
 .header__burger-btn {
 	display: none;
+}
+
+.breadcrumbs {
+	padding: 30px 0px;
+	position: relative;
+	z-index: 10;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		overflow-x: auto;
+	}
+
+	&__item {
+
+		position: relative;
+		padding-right: 18px;
+	}
+
+	&__item::after {
+		content: '/';
+		position: absolute;
+		right: 2px;
+	}
+
+	&__item:last-child::after {
+		display: none;
+	}
+
+	&__link {
+		font-family: 'Gilroy-medium';
+		font-size: 18px;
+		line-height: 22px;
+		color: #656D89;
+	}
+}
+
+.btn {
+	font-family: 'Gilroy-semibold';
+	font-size: 22px;
+	line-height: 26px;
+	color: #FFFFFF;
+	background: #31BEF4;
+	box-shadow: 0px 6px 0px #2CABDC;
+	border-radius: 10px;
+	border: none;
+	padding: 15px 25px;
 }
