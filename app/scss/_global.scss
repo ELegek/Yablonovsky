@@ -1,0 +1,87 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+
+body._lock {
+	overflow: hidden;
+}
+
+body._pc .menu__list>li:hover .menu__sub-list {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	pointer-events: all;
+}
+
+body._touch .menu__list>li {
+	display: flex;
+	align-items: center;
+}
+
+body._touch .menu__link {
+	flex: 1 1 auto;
+}
+
+body._touch .menu__arrow {
+	display: block;
+	width: 0;
+	height: 0;
+	margin-left: 5px;
+	transition: all .3s ease 0s;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #fff;
+}
+
+body._touch .menu__list>li._active .menu__sub-list {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	pointer-events: all;
+}
+
+body._touch .menu__list>li._active .menu__arrow {
+	transform: rotate(-180deg);
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// Menu burger
+
+.header__burger {
+	display: none;
+
+}
+
+.header__burger-btn {
+	display: none;
+}
