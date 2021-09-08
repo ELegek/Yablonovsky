@@ -83,6 +83,16 @@ body._touch .menu__list>li._active .menu__arrow {
 
 }
 
+.header__menu {
+	p {
+		display: none;
+		font-family: 'Gilroy-medium';
+		font-size: 18px;
+		line-height: 40px;
+		color: #212D55;
+	}
+}
+
 .header__burger-btn {
 	display: none;
 }
@@ -90,7 +100,7 @@ body._touch .menu__list>li._active .menu__arrow {
 .breadcrumbs {
 	padding: 30px 0px;
 	position: relative;
-	z-index: 10;
+	z-index: 5;
 
 	&__list {
 		display: flex;
@@ -132,4 +142,35 @@ body._touch .menu__list>li._active .menu__arrow {
 	border-radius: 10px;
 	border: none;
 	padding: 15px 25px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 2.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.accordeon_content {
+	display: none;
+}
+
+.accordion-item--active {
+	display: block;
 }

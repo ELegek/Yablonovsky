@@ -1,7 +1,19 @@
 @media (max-width: 1200px) {}
 
 
-@media (max-width: 990px) {
+@media (max-width: 1030px) {
+
+    .header__inner {
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 94px;
+        z-index: 10;
+        padding: 0px 15px;
+        background-color: rgba(255, 255, 255, .8);
+    }
+
     .header__burger {
         z-index: 5;
         display: block;
@@ -12,6 +24,17 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .header__menu {
+        z-index: 5;
+        display: flex;
+        align-items: center;
+
+        p {
+            display: block;
+        }
     }
 
     .header__burger-btn {
@@ -67,15 +90,17 @@
     }
 
     .menu__body {
+        margin-top: 94px;
         position: fixed;
         top: 0;
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 100px 30px 30px 30px;
+        background-color: #212D55;
+        padding: 25px 30px 30px 30px;
         transition: left .3s ease 0s;
         overflow: auto;
+        z-index: 15;
     }
 
     .menu__body._active {
@@ -125,6 +150,82 @@
         font-size: 20px;
         color: #000;
     }
+
+    .header-nav {
+        display: none;
+    }
+
+    .intro {
+        padding-top: 160px;
+    }
+
+    .menu__list {
+        text-align: right;
+
+        li {
+            padding-right: 10px;
+        }
+
+        .menu__link {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            position: relative;
+
+            &:after {
+                content: url(../images/menu-arrow.png);
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                top: 0;
+                right: -20px;
+            }
+
+
+        }
+
+        .contact_us_wrap {
+            text-align: right;
+            color: #fff;
+
+            .contact_us-tel {
+                color: #fff;
+            }
+
+            .contact_us-link {
+                color: #fff;
+            }
+        }
+    }
+
+    .accordeon_content {
+
+        .accordeon_link {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            position: relative;
+            color: #fff;
+            transition: all .2s ease-in;
+
+            &:after {
+                content: url(../images/menu-arrow.png);
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                top: 0;
+                right: -20px;
+            }
+
+            &:hover {
+                color: #31BEF4;
+            }
+        }
+    }
+
+
 }
 
 
